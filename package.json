@@ -12,13 +12,14 @@
     "react-router": "^6.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "switch": "^0.0.0",
+    "sass-loader": "^10.1.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "sass": "sass --watch ./src/styles/index.scss:./src/styles/style.css --style compressed",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.43.4"
   }
 }
