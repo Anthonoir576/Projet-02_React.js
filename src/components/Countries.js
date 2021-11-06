@@ -11,16 +11,35 @@ import Card from './Card';
 const Countries = () => {
     
     const [data, setData] = useState([]);
-    
+    const [sortedData, setSortedData] = useState([]);
+    const [playOnce, setPlayOnce] = useState(true);
 
     useEffect(() => {
 
-        axios.get('https://restcountries.com/v3.1/all')
-             .then((result) => setData(result.data));
+        if (playOnce) {
 
-             
+            axios.get('https://restcountries.com/v3.1/all')
+                 .then((result) => {
+                
+                    setData(result.data);
+                    setPlayOnce(false);
+            
+                 });
+        };
 
-    }, []);
+        const sortedCountry = () => {
+
+            const countryObj = Object.keys(data).map((i) => data[i]);
+            const sortedArray = countryObj.sort((a, b) => {
+
+                return b.population - a.population;
+
+            });
+        };
+        
+        sortedCountry();
+
+    }, [data]);
     
 
     return (
@@ -33,6 +52,7 @@ const Countries = () => {
             </ul>
         </div>
     );
+    
 };
 /* #################################### */
 
