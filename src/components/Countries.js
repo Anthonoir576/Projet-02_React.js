@@ -1,6 +1,6 @@
 
 /* ######  IMPORT / DECLARATION  ###### */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 /* #################################### */
 
@@ -11,10 +11,27 @@ const Countries = () => {
     
     const [data, setData] = useState([]);
     
-    axios.get('https://restcountries.com/v3.1/all').then((result) => console.log(result))
+
+    useEffect(() => {
+
+        axios.get('https://restcountries.com/v3.1/all')
+             .then((result) => setData(result.data));
+
+             
+
+    }, []);
     
+
     return (
-        <div>{data}</div>
+        <div className="countries">
+            <ul className="contries-list">
+                { data.map((country) => (
+
+                    <li>{country.name.official}</li>
+
+                ))}
+            </ul>
+        </div>
     );
 };
 /* #################################### */
