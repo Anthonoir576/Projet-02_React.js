@@ -1,29 +1,23 @@
 
 /* ######  IMPORT / DECLARATION  ###### */
-import Logo from "../components/Logo";
-import Navigation from "../components/Navigation";
+import React from 'react';
 /* #################################### */
 
 
 
 /* #########   FONCTION   ############# */
-const Home = () => {
-
+const Logo = () => {
     return (
-
-        <div className="Home">
-            <Logo />
-            <Navigation />
-            <h1>Accueil</h1>
+        <div className="logo">
+            <img src="./asset/logo.png" alt="logo" />
+            <h3> REACT </h3>
         </div>
-
     );
-
 };
 /* #################################### */
 
 
 
 /* ###########  EXPORT  ############### */
-export default Home;
+export default Logo;
 /* #################################### */
