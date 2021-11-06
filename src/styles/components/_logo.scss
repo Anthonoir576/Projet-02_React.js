@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
 
   background: url(../asset/main.jpg) center/cover;
   height: 60px;
@@ -20,6 +20,8 @@
     height: 34px;
     width: 34px;
     margin-right: 10px;
+    margin-left: 10px;
+    filter: drop-shadow(0 0 1px black);
     object-fit: cover;
   }
 }

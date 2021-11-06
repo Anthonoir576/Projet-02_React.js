@@ -6,10 +6,15 @@ import React from 'react';
 
 
 /* #########   FONCTION   ############# */
-const NotFound = () => {
+const Card = (props) => {
+
+    const { country } = props;
+
+    console.log(country);
+
     return (
-        <div className="error404">
-            <h1>Erreur 404</h1>
+        <div>
+            CARD
         </div>
     );
 };
@@ -18,5 +23,5 @@ const NotFound = () => {
 
 
 /* ###########  EXPORT  ############### */
-export default NotFound;
+export default Card;
 /* #################################### */
