@@ -2,6 +2,7 @@
 /* ######  IMPORT / DECLARATION  ###### */
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Card from './Card';
 /* #################################### */
 
 
@@ -27,8 +28,7 @@ const Countries = () => {
             <ul className="contries-list">
                 { data.map((country) => (
 
-                    <li>{country.name.official}</li>
-
+                    <Card country={country} key={country.name.official} />
                 ))}
             </ul>
         </div>
