@@ -10,7 +10,8 @@ const Logo = () => {
     return (
         <div className="logo">
             <img src="./asset/logo.png" alt="logo" />
-            <h3> REACT </h3>
+            <h3> PROJET REACT </h3>
+            <img src="./asset/logo.png" alt="logo" />
         </div>
     );
 };
