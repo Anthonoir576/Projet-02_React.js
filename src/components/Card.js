@@ -10,12 +10,18 @@ const Card = (props) => {
 
     const { country } = props;
 
-    console.log(country);
-
     return (
-        <div>
-            CARD
-        </div>
+        <li className="card">
+            <img src={country.flags.png} alt="drapeau" />
+            <div className="data-container">
+                <ul>
+                    <li>{ country.name.official }</li>
+                    <li>Capital : '{ country.capital }'</li>
+                    <li>{ country.population } Habitants</li>
+                </ul>
+            </div>
+        </li>
+        
     );
 };
 /* #################################### */

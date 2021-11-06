@@ -25,7 +25,7 @@ const Countries = () => {
 
     return (
         <div className="countries">
-            <ul className="contries-list">
+            <ul className="countries-list">
                 { data.map((country) => (
 
                     <Card country={country} key={country.name.official} />

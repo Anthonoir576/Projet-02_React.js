@@ -1,4 +1,9 @@
 .countries {
+
+  display: flex;
+  align-content: center;
+  align-items: center;
+
   .sort-container {
     display: grid;
     grid-template-columns: 20% 80%;
