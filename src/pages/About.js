@@ -1,5 +1,11 @@
-import React from 'react';
 
+/* ######  IMPORT / DECLARATION  ###### */
+import React from 'react';
+/* #################################### */
+
+
+
+/* #########   FONCTION   ############# */
 const About = () => {
     return (
         <div>
@@ -12,5 +18,10 @@ const About = () => {
         </div>
     );
 };
+/* #################################### */
 
+
+
+/* ###########  EXPORT  ############### */
 export default About;
+/* #################################### */

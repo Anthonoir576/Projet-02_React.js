@@ -6,11 +6,14 @@ import React from 'react';
 
 
 /* #########   FONCTION   ############# */
-const NotFound = () => {
+const Navigation = () => {
     return (
+
         <div>
-            <h1>Erreur 404</h1>
+            
         </div>
+   
+   
     );
 };
 /* #################################### */
@@ -18,5 +21,5 @@ const NotFound = () => {
 
 
 /* ###########  EXPORT  ############### */
-export default NotFound;
+export default Navigation;
 /* #################################### */
