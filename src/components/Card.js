@@ -10,12 +10,25 @@ const Card = (props) => {
 
     const { country } = props;
 
-    console.log(country);
+    const nombre = (x) => {
 
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
+    };
+
+ 
     return (
-        <div>
-            CARD
-        </div>
+        <li className="card">
+            <img src={country.flags.png} alt="drapeau" />
+            <div className="data-container">
+                <ul>
+                    <li>{ country.name.official }</li>
+                    <li>Capital : '{ country.capital }'</li>
+                    <li>{ nombre(country.population) } Habitants</li>
+                </ul>
+            </div>
+        </li>
+        
     );
 };
 /* #################################### */
