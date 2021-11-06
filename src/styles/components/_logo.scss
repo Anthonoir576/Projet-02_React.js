@@ -20,6 +20,8 @@
     height: 34px;
     width: 34px;
     margin-right: 10px;
+    margin-left: 10px;
+    filter: drop-shadow(0 0 1px black);
     object-fit: cover;
   }
 }
