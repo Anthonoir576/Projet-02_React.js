@@ -6,10 +6,11 @@ import React from 'react';
 
 
 /* #########   FONCTION   ############# */
-const NotFound = () => {
+const Countries = () => {
     return (
-        <div className="error404">
-            <h1>Erreur 404</h1>
+
+        <div>
+            Countries
         </div>
     );
 };
@@ -18,5 +19,5 @@ const NotFound = () => {
 
 
 /* ###########  EXPORT  ############### */
-export default NotFound;
+export default Countries;
 /* #################################### */
