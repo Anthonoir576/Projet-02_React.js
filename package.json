@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "sass": "sass --watch ./src/styles/index.scss:./src/styles/style.css --style compressed",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "back" : "json-server --w src/asset/db.json --port 3003"
   },
   "eslintConfig": {
     "extends": [
