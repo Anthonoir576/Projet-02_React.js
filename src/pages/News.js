@@ -26,19 +26,29 @@ const News = () => {
 
     };
 
+    const handleSubmit = (e) => {
+    
+        e.preventDefault();
+        
+
+    };
+
+
     return (
 
         <div className="news-container">
             <Logo />
             <Navigation />
             <h1>News</h1>
-            <form>
+            <form onSubmit={(e) => handleSubmit(e)}>
                 <input type="text" placeholder="Nom" />
                 <textarea placeholder="Message"></textarea>
                 <input type="submit" value="ENVOYER" />
             </form>
             <ul>
-                {newsData.map((article) => (
+                {newsData
+                    .sort((a, b) => b.date - a.date)
+                    .map((article) => (
 
                     <Article  key={ article.id } article={article} />
 

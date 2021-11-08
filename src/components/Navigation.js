@@ -16,7 +16,7 @@ const Navigation = () => {
                 Accueil
             </NavLink>
             <NavLink exact to="/news" activeClassName="nav-active">
-                News
+                Forums
             </NavLink>
             <NavLink exact to="/a-propos" activeClassName="nav-active">
                 À propos
