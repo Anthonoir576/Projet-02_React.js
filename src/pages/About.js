@@ -12,7 +12,7 @@ const About = () => {
 
     return (
 
-        <div>
+        <div className="aboutUs">
             <Logo />
             <Navigation />
             <h1>À propos</h1>
