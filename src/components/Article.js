@@ -3,6 +3,7 @@
 import React from 'react';
 import { useState } from 'react/cjs/react.development';
 import axios from 'axios';
+import DeleteArticle from './DeleteArticle';
 /* #################################### */
 
 
@@ -73,7 +74,7 @@ const Article = ({ article }) => {
                     <button onClick={() => setIsEditing(true)}>Modifier</button>
                 )}
                 
-                <button>Supprimer</button>
+                <DeleteArticle id={article.id} />
             </div>
         </div>
 
