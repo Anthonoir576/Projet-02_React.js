@@ -3,7 +3,7 @@
 $font-1: "Poppins", sans-serif;
 
 $color-1: #61dafb;
-$color-2: #f7f7f7;
+$color-2: #252020;
 $color-3: #282c34;
 $color-4: rgb(32, 35, 42);
 
@@ -30,3 +30,15 @@ a {
 a:visited {
   color: $color-3;
 }
+h1 {
+  color: white;
+}
+.forum {
+  color: #252020;
+}
+.aboutUs p, h1 {
+  color: white;
+  padding: 0 2rem;
+  text-align: justify;
+}
+
