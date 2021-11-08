@@ -1,12 +1,15 @@
 
 /* ######  IMPORT / DECLARATION  ###### */
 import React from 'react';
+import { useState } from 'react/cjs/react.development';
 /* #################################### */
 
 
 
 /* #########   FONCTION   ############# */
 const Article = ({ article }) => {
+
+    const [isEditing, setIsEditing] = useState(false);
 
     const date = (date) => {
 
