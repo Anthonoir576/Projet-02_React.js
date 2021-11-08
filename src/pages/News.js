@@ -45,7 +45,7 @@ const News = () => {
                 <textarea placeholder="Message"></textarea>
                 <input type="submit" value="ENVOYER" />
             </form>
-            <ul>
+            <ul className="forum">
                 {newsData
                     .sort((a, b) => b.date - a.date)
                     .map((article) => (
