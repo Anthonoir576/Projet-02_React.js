@@ -24,7 +24,7 @@ const DeleteArticle = ({ id }) => {
                 handleDelete();
             };   
         }}>
-            Supprimer
+            Supprimer 
         </button>
     );
 };
