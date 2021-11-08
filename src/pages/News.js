@@ -26,9 +26,6 @@ const News = () => {
 
     };
 
-    
-
-
     return (
 
         <div className="news-container">
@@ -40,11 +37,13 @@ const News = () => {
                 <textarea placeholder="Message"></textarea>
                 <input type="submit" value="ENVOYER" />
             </form>
-            <ul>{newsData.map((article) => (
-                <Article  key={ article.id } article={article} />
+            <ul>
+                {newsData.map((article) => (
 
+                    <Article  key={ article.id } article={article} />
 
-            ))}</ul>
+                ))}
+            </ul>
         </div>
     );
 };

@@ -6,13 +6,16 @@ import React from 'react';
 
 
 /* #########   FONCTION   ############# */
-const Article = () => {
+const Article = ({ article }) => {
 
     return (
 
-        <div>
-            <h2>ARTICLE</h2>
+        <div className="article">
+            <div className="card-header">
+                
+            </div>
         </div>
+
     );
 };
 /* #################################### */
