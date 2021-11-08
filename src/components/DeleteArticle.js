@@ -22,12 +22,9 @@ const DeleteArticle = ({ id }) => {
 
             if (window.confirm('Voulez-vous supprimer votre article ?')) {
                 handleDelete();
-            }
-            
+            };   
         }}>
-            
             Supprimer
-        
         </button>
     );
 };
